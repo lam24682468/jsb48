@@ -1,0 +1,53 @@
+.loading {
+    width: 250px;
+    height: 30px;
+    background-color: orange;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.outline_loading {
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    width: 500px;
+    min-height: 30px;
+    border: 2px solid black;
+    padding: 5px;
+    margin-left: -500px;
+    transition: margin-left 2s;
+}
+
+.loading:hover {
+    width: 500px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(157, 255, 127, 0.808);
+    transition-property: border-radius;
+    transition-duration: 2s;
+}
+
+.box:hover{
+    border-radius: 50%;
+}
+
+#hover_btn:hover ~ .outline_loading {
+    background-color: red;
+    margin-left: 0px;
+}
+
+#show_loading {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+} 
+  
+#show_loading:checked ~ .outline_loading {
+    margin-left: 0px;
+  }  

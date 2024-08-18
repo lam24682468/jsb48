@@ -1,0 +1,35 @@
+.container {
+    width: 300px;
+    height: 50px;
+    background-color: orange;
+    overflow: hidden;
+    overflow: scroll;
+
+    transition-property: height;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.ScrollY:hover ~ .container{
+    height: 250px;
+}
+
+.container1 {
+width: 500px;
+background-color: blue;
+overflow: hidden;
+overflow: scroll;
+text-wrap: nowrap;
+transition-property: width;
+transition-duration: 6s;
+transition-timing-function: ease;
+}
+
+.container2 {
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    background-color: chartreuse;
+    overflow: scroll;
+}
